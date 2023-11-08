@@ -1,4 +1,4 @@
-[Yesterday 15:51] Sibongile Gumbi
+
 import math
  
 while True:
