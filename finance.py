@@ -70,7 +70,7 @@ while True:
  
         print(f"Your monthly bond repayment will be R {bond_repayment:.2f} at an interest rate of {interest_rate}%.")
  
-    elif user_choice == "e":
+    if user_choice == "e":
         print("Thank you for using the Finance Calculator. Goodbye!")
         break
  
