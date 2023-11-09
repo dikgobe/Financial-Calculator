@@ -28,16 +28,20 @@ while True:
  
         interest_type = input("Choose 's' for simple or 'c' for compound interest: ").lower()
  
-        if interest_type == "s":
-            interest_rate = 8
+       if interest_type == "s":
+                 interest_rate = 8
+                 final_amount = principal * (1 + (interest_rate / 100) * years)
         elif interest_type == "c":
-            interest_rate = 8
+             interest_rate = 8
+              #Compound interest calculation
+             final_amount = principal * math.pow(1 + (interest_rate / 100), years)
+            # compound_interest = principal * (math.pow(1 + (interest_rate / 100), time)) - principal
         else:
             print("Invalid interest type. Please choose 's' for simple or 'c' for compound interest.")
             continue
- 
+
         # Simple Interest Calculation
-        final_amount = principal * (1 + (interest_rate / 100) * years)
+       # final_amount = (principal * interest_rate  *years)/ 100
         print(f"The total amount of your investment will be R {final_amount:.2f} after {years} years at an interest rate of {interest_rate}%.")
  
     elif user_choice == "b":
