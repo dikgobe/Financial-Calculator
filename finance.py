@@ -75,5 +75,5 @@ while True:
         break
  
     else:
-        print("Invalid input. Please enter 'i' for investment, 'b' for bond, or 'e' for exit to proceed.")
+        print("Please enter 'i' for investment, 'b' for bond, or 'e' for exit")
  
