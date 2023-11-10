@@ -48,7 +48,7 @@ while True:
         while True:
             try:
                 principal = float(input("Enter the present value of the house: R "))
-                if principal >= 0:
+                if principal >= 0.1:
                     break
                 else:
                     print("Invalid input. Principal amount cannot be negative.")
