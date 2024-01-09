@@ -64,14 +64,14 @@ def clear_inputs():
 try:
     root = tk.Tk()
     root.title("Midnight Coders Finance Calculator")
-    root.configure(bg="#ADD8E6")  # Light Blue background color
+    root.configure(bg="black")  # Light Blue background color
 
     # Title label
     title_label = ttk.Label(root, text="WELCOME TO MIDNIGHT CODERS FINANCIAL CALCULATOR", font=("Tahoma", 15))
     title_label.grid(row=0, column=0, columnspan=2, pady=10)
 
     # Label for user choice
-    choice_label = ttk.Label(root, text="Choose 'Investment' or 'Bond':", background="#ADD8E6")
+    choice_label = ttk.Label(root, text="Choose 'Investment' or 'Bond':", background="#e44578")
     choice_label.grid(row=1, column=0, columnspan=2, pady=10)
 
     # Combobox for user choice
@@ -84,20 +84,20 @@ try:
     investment_frame.grid(row=3, column=0, padx=10, pady=10)
 
     # Investment Frame Widgets
-    investment_subtitle_label = ttk.Label(investment_frame, text="Investment", font=("Tahoma", 12, "bold"), background="#ADD8E6")
+    investment_subtitle_label = ttk.Label(investment_frame, text="Investment", font=("Tahoma", 12, "bold"))
     investment_subtitle_label.grid(row=0, column=0, columnspan=2, pady=5)
 
-    principal_label = ttk.Label(investment_frame, text="Enter the amount of money: R", background="#ADD8E6")
+    principal_label = ttk.Label(investment_frame, text="Enter the amount of money: R")
     principal_label.grid(row=1, column=0, padx=5, pady=5)
     principal_entry = ttk.Entry(investment_frame)
     principal_entry.grid(row=1, column=1, padx=5, pady=5)
 
-    years_label = ttk.Label(investment_frame, text="Enter the number of years:", background="#ADD8E6")
+    years_label = ttk.Label(investment_frame, text="Enter the number of years:")
     years_label.grid(row=2, column=0, padx=5, pady=5)
     years_entry = ttk.Entry(investment_frame)
     years_entry.grid(row=2, column=1, padx=5, pady=5)
 
-    interest_type_label = ttk.Label(investment_frame, text="Choose 'Simple' or 'Compound' interest:", background="#ADD8E6")
+    interest_type_label = ttk.Label(investment_frame, text="Choose 'Simple' or 'Compound' interest:", background="#e44578")
     interest_type_label.grid(row=3, column=0, padx=5, pady=5)
 
     interest_type_var = tk.StringVar()
@@ -112,15 +112,15 @@ try:
     bond_frame.grid(row=3, column=1, padx=10, pady=10)
 
     # Bond Frame Widgets
-    bond_subtitle_label = ttk.Label(bond_frame, text="Bond", font=("Tahoma", 12, "bold"), background="#ADD8E6")
+    bond_subtitle_label = ttk.Label(bond_frame, text="Bond", font=("Tahoma", 12, "bold"), background="#e44578")
     bond_subtitle_label.grid(row=0, column=0, columnspan=2, pady=5)
 
-    principal_label_bond = ttk.Label(bond_frame, text="Enter the present value of the house: R", background="#ADD8E6")
+    principal_label_bond = ttk.Label(bond_frame, text="Enter the present value of the house: R", background="#e44578")
     principal_label_bond.grid(row=1, column=0, padx=5, pady=5)
     principal_entry_bond = ttk.Entry(bond_frame)
     principal_entry_bond.grid(row=1, column=1, padx=5, pady=5)
 
-    months_label = ttk.Label(bond_frame, text="Enter the number of months for repayment:", background="#ADD8E6")
+    months_label = ttk.Label(bond_frame, text="Enter the number of months for repayment:", background="#e44578")
     months_label.grid(row=2, column=0, padx=5, pady=5)
     months_entry = ttk.Entry(bond_frame)
     months_entry.grid(row=2, column=1, padx=5, pady=5)
@@ -129,12 +129,12 @@ try:
     calculate_bond_button.grid(row=3, column=0, columnspan=2, pady=10)
 
     # Result Label
-    result_label = ttk.Label(root, text="", background="#ADD8E6")
+    result_label = ttk.Label(root, text="", background="#e44578")
     result_label.grid(row=4, column=0, columnspan=2, pady=10)
 
     # Style for blue frame
     style = ttk.Style()
-    style.configure("Blue.TFrame", background="#ADD8E6")
+    style.configure("Blue.TFrame", background="#e44578")
 
     root.mainloop()
 
